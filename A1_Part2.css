@@ -1,0 +1,236 @@
+html{
+    height: 100%;
+    display: flex;
+}
+
+body{
+    background: white;
+    margin: auto;
+    width: 100%;
+}
+
+
+
+/* ####### Container 1 Styling ######## */
+
+
+.container1{
+    /* display: flex; 
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap; */
+    /* width: 100% */
+    align-items: center;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+}
+
+/* .container1 h1{
+    left: 265.5px;
+	top: 0px;
+    position: absolute;
+    overflow: visible;
+	width: 501px;
+	white-space: wrap;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	color: rgb(0, 0, 0);
+} */
+
+.container1 h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    
+    text-align: center;
+    font-size: 60px;
+    max-width: 600px;
+    position: relative;
+
+}
+
+.container1 h1:before{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1.5px;
+    background: gray;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    z-index: -2;
+}
+
+.container1 h1:after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1.5px;
+    background: gray;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    z-index: -2;
+}
+
+span{
+    background: #ffffff ;
+}
+
+
+/* #######   Back Element Styling ######### */
+
+.Back{
+    padding-bottom: 50px;
+    /* display: block; */
+    width: 8%;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    /* align-items: center; */
+}
+
+.Back i.fa-arrow-circle-left{
+    color: #eb5b25;
+    font-size: 2.5rem;
+
+}
+
+.backToParis{
+    display: none;
+}
+
+
+/* ####### Container 2 Styling ######## */
+
+.container2{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+} 
+
+
+.container2 .Box1{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid #eb5b25;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px gray;
+    text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+    font-size: 21px;
+}
+
+.container2 .Box1 .tripToParis{
+    font-family: Segoe UI;
+	font-style: normal;
+	font-weight: lighter;
+    text-align: center;
+    color: #eb5b25;
+    font-size: 2.5rem;
+    padding-right: 5px;
+}
+
+.container2 .Box1 hr{
+    
+    margin-left: 60px;
+    
+}
+
+.container2 .Box1 .completedTask{
+    text-align: center;
+    font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+    font-size: 2rem;
+	color: rgba(255,0,0,1);
+	text-decoration: line-through;
+}
+
+.container2 .Box1 .checkbox{
+    margin-left: 150px;
+}
+
+.container2 .Box1 .checkbox input.todoState{
+    /* margin: 150px; */
+    width: 25px;
+    height: 25px;
+}
+
+.container2 .Box1 i.fa-plus-circle{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.5rem;
+    color: #eb5b25;
+    margin-right: 30px;
+    margin-top: 200px;
+    cursor: pointer;
+}
+
+/* .container2 .Box1 span.Pending{
+    text-align: center;
+} */
+
+@media screen and (max-width: 680px){
+
+    .container1{
+        display: none;
+    }
+
+    .Back{
+        display: none;
+    }
+
+    .backToParis{
+        display: block;
+        align-items: left;
+        flex-flow: nowrap;
+        width: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 80px;
+        right: 40px;
+    }
+
+    .backToParis i.fa-arrow-circle-left{
+        color: #eb5b25;
+        font-size: 2.5rem;
+    }
+
+    
+    .container2 .Box1{
+        width: 350px;
+        height: 500px;
+        background-color: rgb(255, 255, 255);
+        border: 1.5px solid #eb5b25;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px gray;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+    }
+
+    .container2 .Box1 .checkbox{
+        margin-left: 100px;
+    }
+
+
+}
